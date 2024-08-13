@@ -3,9 +3,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* background-color: #e6f7ff; */
 }
-/* Navbar container */
+
 .navbar {
     background-color: white;
     border-bottom: 1px solid #e0e0e0;
@@ -13,19 +12,19 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    font-family: Lexend; /* Use the Roboto font */
-    font-weight:600;
+    font-family: Lexend;
+    font-weight: 600;
 }
-/* Navbar logo */
+
 .navbar-logo {
     font-size: 24px;
     font-weight: 700;
-    color: #333333; /* Dark text color */
+    color: #333333;
     text-decoration: none;
     margin-right: auto;
     margin-left: 200px;
 }
-/* Navbar list styling */
+
 .navbar-list {
     list-style-type: none;
     margin-right: 150px;
@@ -36,31 +35,30 @@ body {
 
 }
 
-/* Navbar item styling */
 .navbar-item {
     margin: 0 15px;
 }
 
-/* Navbar link styling */
 .navbar-link {
     font-family: Lexend;
     text-decoration: none;
     font-weight: 400;
-    color: #333333; /* Dark text color */
+    color: #333333;
     font-size: 16px;
     transition: color 0.3s ease;
-    padding-bottom: 5px; /* Space below the text */
+    padding-bottom: 5px;
     position: relative;
 }
 
 .navbar-link:hover {
-    color: #00a4b5; /* Add hover effect with teal color */
+    color: #00a4b5;
 }
 
-/* Special styling for the pricing button */
 .navbar-link.pricing {
-    background-color: #FFD700; /* Gold background for the button */
-    color: black; /* Black text color */
+    background-color: #FFD700;
+    /* Gold background for the button */
+    color: black;
+    /* Black text color */
     padding: 8px 20px;
     border-radius: 30px;
     font-weight: 500;
@@ -69,9 +67,10 @@ body {
 }
 
 .navbar-link.pricing:hover {
-    background-color: #FFC107; /* Slightly darker gold on hover */
+    background-color: #FFC107;
     color: white;
 }
+
 .hero {
     display: flex;
     justify-content: center;
@@ -84,13 +83,13 @@ body {
     position: relative;
 }
 
-.hero.img{
+.hero.img {
     position: absolute;
     object-fit: cover;
     z-index: -1;
 }
 
-.lowerImg{
+.lowerImg {
     position: absolute;
     object-fit: cover;
     z-index: 0;
@@ -156,29 +155,28 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Ensure labels don't interfere with image interactions */
+    pointer-events: none;
 }
+
 .label {
     background-color: #fff;
-    padding: 1.5% 1%; /* Use percentage-based padding */
+    padding: 1.5% 1%;
     border-radius: 20px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     font-size: 1em;
     display: flex;
     align-items: center;
-    position: absolute; /* Position labels absolutely within the image-content */
-    transform-origin: top left; /* Ensure scaling starts from the top left corner */
+    position: absolute;
+    transform-origin: top left;
 }
-
 
 .label.tech {
     border: 2px solid white;
     position: absolute;
-    /* transform: translate(-100px, -830px); */
     top: 20%;
     left: 5%;
     display: flex;
-    width:250px
+    width: 250px
 }
 
 
@@ -192,14 +190,13 @@ body {
 .label.cost {
     border: 2px solid white;
     position: absolute;
-    /* transform: translate( 200px, -750px); */
     top: 30%;
     left: 50%;
     display: flex;
     width: 200px;
 }
 
-.label.cost img{
+.label.cost img {
     width: 80px;
     height: 20px;
     margin-right: 10px;
@@ -209,20 +206,19 @@ body {
 .label.solution {
     border: 2px solid white;
     position: absolute;
-    /* transform: translate(-70px, -450px); */
     top: 75%;
     left: 10%;
     display: flex;
 }
 
-.label.solution img{
+.label.solution img {
     width: 60px;
     height: 20px;
     margin-right: 10px;
     margin-top: 5px;
 }
 
-.arrow::before{
+.arrow::before {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,9 +230,6 @@ body {
     padding-bottom: 10px;
     color: black;
     background-color: #ff9933;
-    /* padding: 10px 20px; */
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
 }
 
 
@@ -256,18 +249,16 @@ body {
 }
 
 .highlight {
-    color: #2d9cdb; /* Highlight color */
-    font-weight: bold; /* Optional: Make the text bold */
-    padding: 0 5px; /* Optional: Add some padding to create space around the highlighted text */
+    color: #2d9cdb;
 }
 
 
 .card-content {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two cards per row */
-    column-gap: 33px; /* Reduce horizontal gap between cards */
-    row-gap: 10px; /* Reduce vertical gap between cards */
+    grid-template-columns: 1fr 1fr;
+    column-gap: 33px;
+    row-gap: 10px;
     z-index: 1;
     width: 100px;
     height: 100px;
@@ -275,13 +266,15 @@ body {
     padding: auto;
     text-align: left;
 }
+
 .second-content h2 {
     font-size: 33px;
     color: #2F4858;
     margin-top: 10px;
-    margin-left: 200px; 
+    margin-left: 200px;
 
 }
+
 .card {
     background-color: white;
     border-radius: 30px;
@@ -329,67 +322,81 @@ body {
         width: 100%;
         padding: 0;
     }
+
     .container {
         flex-direction: column;
         padding-top: 0;
-    }   
-    .text-content h1{
+    }
+
+    .text-content h1 {
         font-size: 20px;
         margin-left: 15px;
     }
-    .text-content p{
+
+    .text-content p {
         font-size: 15px;
         margin-left: 15px;
     }
-    .text-content .arrow{
+
+    .text-content .arrow {
         font-size: 15px;
         margin-left: 15px;
     }
-    .image-content{
+
+    .image-content {
         width: auto;
         height: auto;
     }
+
     .labels .label span {
         font-size: 10px
     }
-    .label.tech img{
+
+    .label.tech img {
         width: 30px;
-        height:10px;
+        height: 10px;
     }
-    .label.tech{
+
+    .label.tech {
         width: 150px;
         height: 45px;
     }
-    .lowerImg{
+
+    .lowerImg {
         display: none;
     }
 
-    .second-content{
+    .second-content {
         text-align: center;
         padding: 5px;
     }
-    .second-content h2{
+
+    .second-content h2 {
         font-size: 15px;
         margin-left: 15px;
         margin-bottom: 5px;
     }
-    .second-content-wrapper{
+
+    .second-content-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .card-content{
+
+    .card-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
-    .card{
+
+    .card {
         width: 200%;
         height: auto;
     }
-    .card-bg{
+
+    .card-bg {
         display: none;
     }
 
@@ -401,63 +408,74 @@ body {
         width: 100%;
         padding: 0;
     }
+
     .container {
         flex-direction: column;
         padding-top: 0;
-    }   
-    .text-content h1{
+    }
+
+    .text-content h1 {
         font-size: 30px;
         margin-left: 15px;
     }
-    .text-content p{
+
+    .text-content p {
         font-size: 20px;
         margin-left: 15px;
     }
-    .text-content .arrow{
+
+    .text-content .arrow {
         font-size: 15px;
         margin-left: 15px;
     }
-    .image-content{
+
+    .image-content {
         width: auto;
         height: auto;
         margin-left: 40px;
     }
+
     .labels .label span {
         font-size: 20px
     }
 
 
-    .lowerImg{
+    .lowerImg {
         display: none;
     }
 
-    .second-content{
+    .second-content {
         text-align: center;
         padding: 5px;
     }
-    .second-content h2{
+
+    .second-content h2 {
         font-size: 30px;
         margin-left: 15px;
         margin-bottom: 10px;
     }
-    .second-content-wrapper{
+
+    .second-content-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .card-content{
+
+    .card-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
-    .card{
+
+    .card {
         width: 400%;
         height: auto;
         font-family: Lexend;
     }
-    .card-bg{
+
+    .card-bg {
         display: none;
     }
 
