@@ -1,0 +1,398 @@
+body {
+    font-family: Lexend;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* background-color: #e6f7ff; */
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100wh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: url('Rectangle 29.png');
+    position: relative;
+}
+
+.hero.img{
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.lowerImg{
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    color: #333;
+    line-height: 1.4;
+    margin-left: 200px;
+}
+
+.text-content .highlight {
+    color: #2d9cdb;
+}
+
+.text-content p {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.text-content .arrow {
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: #ff9933;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.text-content .arrow::before {
+    content: "↓";
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.image-content {
+    position: relative;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+.image-content img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure labels don't interfere with image interactions */
+}
+.label {
+    background-color: #fff;
+    padding: 1.5% 1%; /* Use percentage-based padding */
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    position: absolute; /* Position labels absolutely within the image-content */
+    transform-origin: top left; /* Ensure scaling starts from the top left corner */
+}
+
+
+.label.tech {
+    border: 2px solid white;
+    position: absolute;
+    /* transform: translate(-100px, -830px); */
+    top: 20%;
+    left: 5%;
+    display: flex;
+    width:250px
+}
+
+
+.label.tech img {
+    width: 60px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.label.cost {
+    border: 2px solid white;
+    position: absolute;
+    /* transform: translate( 200px, -750px); */
+    top: 30%;
+    left: 50%;
+    display: flex;
+    width: 200px;
+}
+
+.label.cost img{
+    width: 80px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.label.solution {
+    border: 2px solid white;
+    position: absolute;
+    /* transform: translate(-70px, -450px); */
+    top: 75%;
+    left: 10%;
+    display: flex;
+}
+
+.label.solution img{
+    width: 60px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.arrow::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: black;
+    background-color: #ff9933;
+    /* padding: 10px 20px; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+}
+
+
+
+.second-content {
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    text-align: left;
+}
+
+.second-content h2 {
+    font-size: 28px;
+    color: #2F4858;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.highlight {
+    color: #2d9cdb; /* Highlight color */
+    font-weight: bold; /* Optional: Make the text bold */
+    padding: 0 5px; /* Optional: Add some padding to create space around the highlighted text */
+}
+
+
+.card-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two cards per row */
+    column-gap: 33px; /* Reduce horizontal gap between cards */
+    row-gap: 10px; /* Reduce vertical gap between cards */
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    padding: auto;
+    text-align: left;
+}
+.second-content h2 {
+    font-size: 33px;
+    color: #2F4858;
+    margin-top: 10px;
+    margin-left: 200px; 
+
+}
+.card {
+    background-color: white;
+    border-radius: 30px;
+    border: 2px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #2F4858;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #606060;
+    padding-bottom: 15px;
+}
+
+
+.card-bg {
+    position: absolute;
+    z-index: 0;
+}
+
+.card-bg img {
+    height: auto;
+    width: 500px;
+    transform: translate(1040px, -270px);
+}
+
+@media (max-width: 414px) {
+    .hero {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .container {
+        flex-direction: column;
+        padding-top: 0;
+    }   
+    .text-content h1{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .text-content p{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .text-content .arrow{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .image-content{
+        width: auto;
+        height: auto;
+    }
+    .labels .label span {
+        font-size: 10px
+    }
+    .label.tech img{
+        width: 30px;
+        height:10px;
+    }
+    .label.tech{
+        width: 150px;
+        height: 45px;
+    }
+    .lowerImg{
+        display: none;
+    }
+
+    .second-content{
+        text-align: center;
+        padding: 5px;
+    }
+    .second-content h2{
+        font-size: 15px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    .second-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .card{
+        width: 200%;
+        height: auto;
+    }
+    .card-bg{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .container {
+        flex-direction: column;
+        padding-top: 0;
+    }   
+    .text-content h1{
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    .text-content p{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .text-content .arrow{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .image-content{
+        width: auto;
+        height: auto;
+        margin-left: 40px;
+    }
+    .labels .label span {
+        font-size: 20px
+    }
+
+
+    .lowerImg{
+        display: none;
+    }
+
+    .second-content{
+        text-align: center;
+        padding: 5px;
+    }
+    .second-content h2{
+        font-size: 30px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .second-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .card{
+        width: 400%;
+        height: auto;
+        font-family: Lexend;
+    }
+    .card-bg{
+        display: none;
+    }
+
+}
