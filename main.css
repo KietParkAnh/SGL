@@ -5,82 +5,62 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
+header{
     background-color: white;
-    border-bottom: 1px solid #e0e0e0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    font-family: Lexend;
-    font-weight: 600;
+    margin-left: 60px;
+    margin-right: 60px;
 }
-
-.navbar-logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #333333;
+li{
+    list-style: none;
+}
+a{
     text-decoration: none;
-    margin-right: auto;
-    margin-left: 200px;
-}
-
-.navbar-list {
-    list-style-type: none;
-    margin-right: 150px;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-}
-
-.navbar-item {
-    margin: 0 15px;
-}
-
-.navbar-link {
-    font-family: Lexend;
-    text-decoration: none;
-    font-weight: 400;
-    color: #333333;
-    font-size: 16px;
-    transition: color 0.3s ease;
-    padding-bottom: 5px;
-    position: relative;
-}
-
-.navbar-link:hover {
-    color: #00a4b5;
-}
-
-.navbar-link.pricing {
-    background-color: #FFD700;
-    /* Gold background for the button */
     color: black;
-    /* Black text color */
-    padding: 8px 20px;
-    border-radius: 30px;
-    font-weight: 500;
-    font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto; 
+    margin: 15px;
 }
 
-.navbar-link.pricing:hover {
-    background-color: #FFC107;
-    color: white;
+.nav-logo {
+    flex-shrink: 0;
+    margin-left: 60px; 
 }
 
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 20px; 
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black; 
+    padding: auto;
+    margin-right: 20px;
+}
+
+.hamburger {
+    display: none;
+}
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     width: 100wh;
     font-family: Lexend;
     font-weight: bold;
     background-image: url('Pictures/Rectangle 29.png');
     position: relative;
+    margin:0;
+    padding:0;
 }
 
 .hero.img {
@@ -92,7 +72,7 @@ body {
 .lowerImg {
     position: absolute;
     object-fit: cover;
-    z-index: 0;
+    z-index: 1;
     bottom: 0;
     left: 0;
 }
@@ -102,13 +82,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    margin-left: 15px;
 }
-
+.text-content{
+    margin-left: 0px;
+}
 .text-content h1 {
     font-size: 50px;
     color: #333;
     line-height: 1.4;
-    margin-left: 200px;
+    margin-left: 10px;
 }
 
 .text-content .highlight {
@@ -119,7 +102,7 @@ body {
     font-size: 1.5em;
     color: #666;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: auto;
 }
 
 .text-content .arrow {
@@ -128,7 +111,7 @@ body {
     color: #ff9933;
     display: flex;
     align-items: center;
-    margin-left: 200px;
+    margin-left: auto;
 }
 
 .text-content .arrow::before {
@@ -232,26 +215,23 @@ body {
     background-color: #ff9933;
 }
 
-
-
 .second-content {
-    margin: 0 auto;
-    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: Lexend;
+    font-weight: bold;
     position: relative;
-    text-align: left;
 }
-
-.second-content h2 {
-    font-size: 28px;
-    color: #2F4858;
-    margin-bottom: 80px;
-    margin-top: 50px;
+.second-container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 20px;
 }
-
 .highlight {
     color: #2d9cdb;
 }
-
 
 .card-content {
     position: relative;
@@ -262,17 +242,16 @@ body {
     z-index: 1;
     width: 100px;
     height: 100px;
-    margin-left: 200px;
     padding: auto;
     text-align: left;
+    margin-left: 150px;
 }
 
 .second-content h2 {
     font-size: 33px;
     color: #2F4858;
     margin-top: 10px;
-    margin-left: 200px;
-
+    margin-left: 150px;
 }
 
 .card {
@@ -306,6 +285,7 @@ body {
 
 
 .card-bg {
+    margin-top: 70px;
     position: absolute;
     z-index: 0;
 }
@@ -316,7 +296,22 @@ body {
     transform: translate(1040px, -270px);
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+
+}
 @media (max-width: 414px) {
+
     .hero {
         height: 100%;
         width: 100%;
@@ -403,6 +398,43 @@ body {
 }
 
 @media (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform:  translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        right: -200%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: right 0.3s ease;
+    }
+    .nav-logo{
+        margin-left:60px;
+    }
+    .hamburger.active + .nav-menu{
+        right: 0;
+        z-index: 1;
+        position: absolute;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
     .hero {
         height: 100%;
         width: 100%;
@@ -413,7 +445,9 @@ body {
         flex-direction: column;
         padding-top: 0;
     }
-
+    .text-content{
+        text-align: center;
+    }
     .text-content h1 {
         font-size: 30px;
         margin-left: 15px;
@@ -426,7 +460,7 @@ body {
 
     .text-content .arrow {
         font-size: 15px;
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
 
     .image-content {
@@ -438,8 +472,6 @@ body {
     .labels .label span {
         font-size: 20px
     }
-
-
     .lowerImg {
         display: none;
     }
@@ -447,6 +479,7 @@ body {
     .second-content {
         text-align: center;
         padding: 5px;
+
     }
 
     .second-content h2 {
@@ -475,7 +508,7 @@ body {
         font-family: Lexend;
     }
 
-    .card-bg {
+    .card-bg img {
         display: none;
     }
 
