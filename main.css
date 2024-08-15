@@ -223,6 +223,7 @@ a{
     font-family: Lexend;
     font-weight: bold;
     position: relative;
+    justify-content: center;
 }
 .second-container {
     max-width: 1200px;
@@ -310,92 +311,6 @@ a{
     background-color: black;
 
 }
-@media (max-width: 414px) {
-
-    .hero {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-    }
-
-    .container {
-        flex-direction: column;
-        padding-top: 0;
-    }
-
-    .text-content h1 {
-        font-size: 20px;
-        margin-left: 15px;
-    }
-
-    .text-content p {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    .text-content .arrow {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    .image-content {
-        width: auto;
-        height: auto;
-    }
-
-    .labels .label span {
-        font-size: 10px
-    }
-
-    .label.tech img {
-        width: 30px;
-        height: 10px;
-    }
-
-    .label.tech {
-        width: 150px;
-        height: 45px;
-    }
-
-    .lowerImg {
-        display: none;
-    }
-
-    .second-content {
-        text-align: center;
-        padding: 5px;
-    }
-
-    .second-content h2 {
-        font-size: 15px;
-        margin-left: 15px;
-        margin-bottom: 5px;
-    }
-
-    .second-content-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .card-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-
-    .card {
-        width: 200%;
-        height: auto;
-    }
-
-    .card-bg {
-        display: none;
-    }
-
-}
 
 @media (max-width: 768px) {
     .hamburger{
@@ -421,8 +336,9 @@ a{
         text-align: center;
         transition: right 0.3s ease;
     }
-    .nav-logo{
-        margin-left:60px;
+    header{
+        margin-left: 0;
+        margin-right: 0;
     }
     .hamburger.active + .nav-menu{
         right: 0;
@@ -446,7 +362,7 @@ a{
         padding-top: 0;
     }
     .text-content{
-        text-align: center;
+        text-align: left;
     }
     .text-content h1 {
         font-size: 30px;
