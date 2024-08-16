@@ -30,8 +30,9 @@ a {
 }
 
 .nav-logo {
+    position: relative;
     flex-shrink: 0;
-    margin-left: 6%;
+    margin-right: 25%;
 }
 
 .nav-menu {
@@ -131,6 +132,7 @@ a {
     position: relative;
     margin-bottom: 50px;
     height: auto;
+    width: auto;
 }
 
 .image-content img {
@@ -262,9 +264,9 @@ a {
 }
 
 .second-container h2 {
-    font-size: 50px;
+    font-size: 40px;
     color: #2F4858;
-    margin-left:23%;
+    margin-left:10%;
 }
 
 .card {
@@ -329,7 +331,10 @@ a {
 
 @media (max-width: 768px) {
     body{
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
+        
+        width: auto;
+        height: auto;
     }
     .hamburger {
         display: block;
@@ -376,6 +381,7 @@ a {
         /* width: 100%; */
     }
     .nav-logo{
+        position: relative;
         margin-left:0;
         margin-left:100px;
     }
@@ -457,10 +463,12 @@ a {
         align-items: center;
         margin: 0;
         width:100%;
+        height: auto;
     }
 
     .card {
-        width: auto%;
+        /* margin: auto; */
+        /* width: auto; */
         height: auto;
         font-family: Lexend;
     }
