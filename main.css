@@ -80,7 +80,6 @@ a {
 }
 
 .text-content {
-    width: 600px;
     flex: 1;
 }
 
@@ -89,6 +88,7 @@ a {
     font-weight: 400;
     line-height: 58px;
     text-align: left;
+    width: 600px;
 }
 
 .text-content .highlight {
@@ -120,9 +120,12 @@ a {
     left: 10%;
 
 }
-
+.warehouse{
+    /* display:none; */
+}
 .image-content img {
     position: relative;
+    flex: 1;
 }
 
 .label {
@@ -135,8 +138,8 @@ a {
 }
 
 .label.tech {
-    top: 18%;
-    left: 0%;
+    top: 20%;
+    left: 52%;
     display: flex;
     max-width: 263px;
     max-height: 69px;
@@ -158,8 +161,8 @@ a {
 }
 
 .label.cost {
-    top: 29%;
-    left: 53%;
+    top: 32%;
+    left: 72%;
     display: flex;
     max-width: 197px;
     max-height: 69px;
@@ -181,7 +184,7 @@ a {
 
 .label.solution {
     top: 75%;
-    left: 10%;
+    left: 56%;
     display: flex;
     max-width: 263px;
     max-height: 72px;
@@ -214,6 +217,7 @@ a {
     position: relative;
     max-width: 1176px;
     margin: 0 auto;
+    padding-top: 77px;
 }
 
 .second-container {
@@ -301,7 +305,7 @@ a {
     height: 805px;
     position: absolute;
     z-index: -1;
-    top: 1%;
+    top: 14%;
     left: 68%;
 }
 
